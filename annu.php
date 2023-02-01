@@ -4,7 +4,9 @@ if(isset($_POST["submit"]))
     $val = $_POST["Name"];
     
     for ($i=1; $i<=10 ; $i++) { 
-        echo intval($val)*$i."<br>";
+        echo intval($val)*$i."<br>" ;
+        sdjdgshfjgfsd
+        dbdfkjghfdgkj
     }
 // echo $_POST["Name"];
 }
