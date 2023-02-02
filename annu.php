@@ -1,17 +1,15 @@
+<form method="post" action="">
+    <input type="text" name="studentname">
+    <input type="submit" value="click" name="submit"> <!-- assign a name for the button -->
+</form>
+
 <?php
-if(isset($_POST["submit"]))
+function display()
 {
-    $val = intval($_POST["Name"]);
-    $clas = intval($_POST["Class"]);
-    
-    for ($i=1; $i<=10 ; $i++) { 
-        echo $clas*$i."<br>";
-    }
-// echo $_POST["Name"];
+    echo "".$_POST["studentname"];
 }
+if(isset($_POST['submit']))
+{
+   display();
+} 
 ?>
- <form id="myform" role="form" action="" method="post">
-        <input type="text" class="form-control" name="Name">  
-        <input type="text" class="form-control" name="Class">  
-        <input type="submit"  name="submit">
-    </form> 
